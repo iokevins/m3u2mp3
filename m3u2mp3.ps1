@@ -4,7 +4,7 @@ Param (
 [string] $M3UHttpUrl,
 
 [Parameter(Mandatory=$False)]
-[string] $TargetDirectoryPathRoot = "C:\Users\k\Music"
+[string] $TargetDirectoryPathRoot = [Environment]::GetFolderPath("MyMusic")
 )
 
 Set-Location $PSScriptRoot
